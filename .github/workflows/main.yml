@@ -4,8 +4,8 @@ on:
   # Trigger the workflow on push
   push:
     branches:
-      # Push events on main branch
-      - main
+      # Push events on master branch
+      - master
 
 jobs:
 
