@@ -49,7 +49,7 @@ jobs:
       
       - name: Create Archive of Dependencies
         run: |
-          cd ./venv/lib/python3.7/site-packages
+          cd ./venv/lib/python3.8/site-packages
           zip -r9 ../../../../api.zip .
       
       - name: Add API Files to ZIP file
