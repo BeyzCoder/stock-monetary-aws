@@ -66,7 +66,7 @@ jobs:
   Continuous-Deployment:
     runs-on: ubuntu-latest
     needs: [Continuous-Integrate]
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     steps:
       - name: Install AWS CLI
         uses: unfor19/install-aws-cli-action@v1
