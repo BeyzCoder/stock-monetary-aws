@@ -58,7 +58,7 @@ jobs:
       - name: Upload ZIP File Artifact
         # uploads artifacts from your workflow allowing you to share data between jobs
         # Store data once a workflow is complete
-        uses: actions/upload-artifact@v2aws
+        uses: actions/upload-artifact@v2
         with:
           name: api
           path: api.zip
