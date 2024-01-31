@@ -6,8 +6,8 @@ from api.routes import statements, quotes
 
 app = FastAPI()
 
-app.include_router(statements.router, prefix="/statements")
-app.include_router(quotes.router, prefix="/quotes")
+# app.include_router(statements.router, prefix="/statements")
+# app.include_router(quotes.router, prefix="/quotes")
 
 @app.get("/")
 async def root() -> JSONResponse:

@@ -9,8 +9,8 @@ async def quotes() -> JSONResponse:
     return JSONResponse(status_code=status.HTTP_200_OK, content=resp)
 
 @router.get("/history-price/dates/{symbol}")
-async def history_prices(symbol: str) -> JSONResponse:
-    resp = {"history_prices" : symbol}
+async def history_price(symbol: str) -> JSONResponse:
+    resp = {"history_price" : symbol}
     return JSONResponse(status_code=status.HTTP_200_OK, content=resp)
 
 @router.get("/dividend/dates/{symbol}")
