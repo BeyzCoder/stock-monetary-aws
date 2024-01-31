@@ -6,6 +6,6 @@ app = FastAPI()
 
 @app.get("/")
 async def root() -> JSONResponse:
-    return {"Status" : "Server Running!"}
+    return {"Status" : "Server Up Running!"}
 
 handler = Mangum(app=app)
